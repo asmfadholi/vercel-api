@@ -13,4 +13,9 @@ app.get('/api/item/:slug', (req, res) => {
   res.end(`Item: ${slug}`)
 })
 
+app.get('/api/test', (req, res) => {
+  const { slug } = req.params
+  res.end(`Test: ${slug}`)
+})
+
 module.exports = app
